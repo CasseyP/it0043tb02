@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 5rem;
+    color: #eedd41;
+
+
+}
+
+h2 {
+    text-align: center;
+    font-family: Bebas Neue;
+    font-size: 2rem;
+    color: rgb(25, 25, 88);
+}
+
+body {
+    align-content: center;
+    background-image: url("bg patts.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.left {
+    text-align: right;
+
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100;
+    text-align: center;
+    padding: 50px;
+    font-size: 1rem;
+    color: rgb(222, 222, 222);
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+.highlight {
+    color: hwb(225 6% 44% / 0.919);
+    font-weight: bolder;
+}
+
+.org {
+    font-style: italic;
+    font-weight: bolder;
+
+}
+
+.hashtags {
+    font-weight: bolder;
+}
