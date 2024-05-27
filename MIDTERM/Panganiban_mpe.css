@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/64c9ea21-82be-48a3-a6f5-6d1786a3fc7e/d849dwo-0cdfe0ca-4bbe-43d5-b8d4-6c58db906e1e.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0YzllYTIxLTgyYmUtNDhhMy1hNmY1LTZkMTc4NmEzZmM3ZVwvZDg0OWR3by0wY2RmZTBjYS00YmJlLTQzZDUtYjhkNC02YzU4ZGI5MDZlMWUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.n3jDMgOwazieu5EgWAGyGW4kZSx12Xqbs3BMHPLp6o4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 85vw;
+    margin: 20px auto;
+    border: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.iconp {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.pokeball {
+    align-self: center;
+    margin-right: 10px;
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    display: none;
+    margin: 0px auto;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 3px 5px black;
+    font-family: montserrat;
+}
+
+#icon1 {
+    background-color: #f8fec1;
+}
+
+#icon2 {
+    background-color: rgb(255, 177, 67);
+}
+
+#icon3 {
+    background-color: rgb(241, 251, 55);
+}
+
+#icon4 {
+    background-color: rgb(16, 248, 140);
+}
+
+#icon5 {
+    background-color: rgb(233, 154, 216);
+}
+
+#icon6 {
+    background-color: rgb(16, 128, 248);
+}
+
+#icon7 {
+    background-color: rgb(225, 173, 75);
+}
+
+#icon8 {
+    background-color: rgb(16, 182, 248);
+}
+
+#icon9 {
+    background-color: rgb(255, 221, 50);
+}
+
+#icon10 {
+    background-color: rgb(241, 197, 227);
+}
+
+#icon11 {
+    background-color: rgb(254, 236, 164);
+}
+
+#icon12 {
+    background-color: rgb(27, 96, 182);
+}
+
+
+@media (max-width: 980px) {
+    .box {
+        transition: 1s;
+        width: 90%;
+        height: 150px;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    .iconp {
+        display: inline-block;
+        flex-direction: row;
+        width: 150px;
+        margin-left: 10px;
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    p {
+        display: inline;
+    }
+
+    .pokeball {
+        display: inline;
+    }
+
+    #icon1:hover {
+        background-image: url(https://th.bing.com/th/id/OIP.WxWxIl8JJ7_-yXBUieppnwHaEK?w=1024&h=576&rs=1&pid=ImgDetMain);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(252, 209, 109);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+
+        }
+    }
+
+    #icon2:hover {
+        background-image: url(https://img00.deviantart.net/89d1/i/2015/045/e/5/charmander__pokemon____minimalist_by_sykotixuk-d8dr00u.png);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(245, 132, 57);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon3:hover {
+        background-image: url(https://cache.desktopnexus.com/thumbseg/853/853736-bigthumbnail.jpg);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(243, 220, 165);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon4:hover {
+        background-image: url(https://images7.alphacoders.com/975/thumb-1920-975298.png);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(68, 136, 113);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon5:hover {
+        background-image: url(https://images5.alphacoders.com/587/587715.jpg);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(243, 147, 163);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon6:hover {
+        background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700142779.jpg);
+        background-position: right;
+        background-size: cover;
+
+        p {
+            background-color: rgb(85, 97, 136);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon7:hover {
+        background-image: url(https://cdn.wallpapersafari.com/90/51/WQ37NY.jpg);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(124, 82, 53);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon8:hover {
+        background-image: url(https://e0.pxfuel.com/wallpapers/669/324/desktop-wallpaper-dratini-on-cute-dragonite.jpg);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(34, 100, 205);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon9:hover {
+        background-image: url(https://img00.deviantart.net/fbb9/i/2015/235/0/8/pikachu_minimalist_wallpaper_by_dragoleni-d93q6xg.jpg);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(216, 56, 16);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon10:hover {
+        background-image: url(mew_wallpaper.png);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(247, 105, 105);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon11:hover {
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/964/988/55/pokemon-mankey-pokemon-minimalist-wallpaper-preview.jpg);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(206, 182, 166);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+    #icon12:hover {
+        background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fa1f38b3-1b53-4ee3-afac-477fe31a439e/de1tart-39dc547f-f17f-45bf-bf4b-9865ba831b5f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZhMWYzOGIzLTFiNTMtNGVlMy1hZmFjLTQ3N2ZlMzFhNDM5ZVwvZGUxdGFydC0zOWRjNTQ3Zi1mMTdmLTQ1YmYtYmY0Yi05ODY1YmE4MzFiNWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.elqEWrlKztI5Ne3z7xFBsThgcZKqi5Zz4QZCjpPAXJ0);
+        background-position: center;
+        background-size: cover;
+
+        p {
+            background-color: rgb(26, 75, 65);
+            padding-right: 3px;
+            padding-left: 3px;
+            transform: translate(0, -20%);
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+    }
+
+}
+
+@media (max-width: 669px) {
+    .box {
+        transition: 1s;
+        width: 90%;
+        height: 300px;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .iconp {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        justify-content: space-around;
+    }
+
+    p {
+        display: inline;
+    }
+
+    .pokeball {
+        display: none;
+
+    }
+
+    #icon1:hover,
+    #icon2:hover,
+    #icon3:hover,
+    #icon4:hover,
+    #icon5:hover,
+    #icon6:hover,
+    #icon7:hover,
+    #icon8:hover,
+    #icon9:hover,
+    #icon10:hover,
+    #icon11:hover,
+    #icon12:hover {
+        background-image: url(https://www.mkgifs.com/wp-content/uploads/2022/06/pokemon-2.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: none;
+    }
+
+}
