@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg {
+    background-image: url(https://jujutsukaisen.jp/images/bg_sub.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo{
+    margin: auto;
+    width: 280px;
+}
+
+.container {
+    gap: 10px;
+    width: 90vw;
+    margin: 50px auto;
+    border: 1px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+
+
+.box {
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    border: 9px solid rgb(61, 27, 100);
+    text-align: center;
+    border-radius: 20px;
+    filter: drop-shadow(9px 10px 4px)
+}
+
+
+img {
+    
+    width: 140px;
+    display: block;
+    align-self: center;
+}
+.bgicon{
+    background-image: url(https://jujutsukaisen.jp/images/chara_bg.jpg);
+    width: 200px;
+}
+
+.deets{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    font-size: 2rem;
+    width: 700;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(255, 251, 246, 0.577);
+    border-radius: 20px;
+}
+
+
+.jt {
+    font-style: italic;
+    font-size: 1rem;
+    background-color: rgba(255, 251, 246, 0.577);
+    border-radius: 20px;
+}
+
+
+.tbold {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.desc {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5;
+    background-color: rgba(255, 251, 246, 0.577);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+
+#Gojo {
+    background-color: #CAB2E4;
+    grid-column: 1/3;
+}
+
+#Yuji {
+    background-color: #F7C7C6;
+}
+
+#Toge {
+    background-color: #4A83AA;
+}
+
+#Nobara {
+    background-color: #CE5D4C;
+    grid-column: 2/4;
+}
+
+#Megumi {
+    background-color: #E1E7F6;
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+@media (max-width:800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    #Gojo {
+        grid-column: 1/2;
+    }
+
+    #Nobara {
+        grid-column: 1/2;
+    }
+
+    #Megumi {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .box:hover {
+        background-image: url( https://64.media.tumblr.com/f0f0e58f32f50b1c5864a1f9d9951d18/e7e6a405246874ff-3e/s540x810/32dfeaabcc577a66ebc93eb0d258ead779c51fb0.gifv);
+        background-position: center;
+        background-size: cover;
+}
