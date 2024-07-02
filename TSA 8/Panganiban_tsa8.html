@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="Panganiban_TSA8.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- LEFT SIDE -->
+        <div class="controls">
+            <div class="header">
+                <p> Monsters Sim.</p>
+            </div>
+
+            <button class="btns" id="resFlexbox" onclick="resFlexbox()">Reset Flexbox</button>
+
+            <div class="botrcontrols">
+                <!-- Justify Content -->
+
+                <div class="section">
+                    <p>Justify Content</p>
+                    <div class="secbuttons">
+                        <div class="jsecbutts">
+                            <button class="btns" id="jstart" onclick="jstart()">Start</button>
+                            <button class="btns" id="jcenter" onclick="jcenter()">Center</button>
+                            <button class="btns" id="jend" onclick="jend()">End</button>
+                            <button class="btns" id="jspacebetween" onclick="jspacebetween()">Space Between</button>
+                            <button class="btns" id="jspacearound" onclick="jspacearound()">Space Around</button>
+                            <button class="btns" id="jspaceevenly" onclick="jspaceevenly()">Space Evenly</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Align Items -->
+                <div class="section">
+                    <p>Align Items</p>
+                    <div class="secbuttons">
+                        <div class="jsecbutts">
+                            <button class="btns" id="alstart" onclick="alstart()">Start</button>
+                            <button class="btns" id="alcenter" onclick="alcenter()">Center</button>
+                            <button class="btns" id="alend" onclick="alend()">End</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- LEFT SIDE -->
+
+
+        <!-- MID -->
+        <!-- Flexbox Container -->
+        <div class="flexbox-container" id="flex">
+            <div class="box" id="box1"><img src="Mikepix.png" class="pixs" alt=""></div>
+            <div class="box" id="box2"><img src="Sullypix.png" alt="" class="pixs"></div>
+            <div class="box" id="box3"><img src="Boopix.png" alt="" class="pixs"></div>
+        </div>
+        <!-- MID -->
+
+
+        <!-- RIGHT SIDE -->
+        <div class="controls">
+
+
+            <div class="tcontrols">
+                <!-- Gap -->
+                <div class="secbuttons" id="gapbor">
+                    <div class="gapsecbutts">
+                        <p id="gtext">Gap</p>
+                        <input type="number" id="gap-counter" value="0" min="0" oninput="updateGap()">
+                    </div>
+                </div>
+
+                <!-- Flex Direction -->
+                <div class="section">
+                    <p>Flex Direction</p>
+                    <div class="secbuttons">
+                        <div class="jsecbutts">
+                            <button class="btns" id="fdrow" onclick="fdrow()">Row</button>
+                            <button class="btns" id="fdcolumn" onclick="fdcolumn()">Column</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flex Grow -->
+            <div class="section">
+                <p>Flex Grow</p>
+                <div class="secbuttons">
+                    <div class="jsecbutts">
+                        <button class="btns" id="resflexgrow" onclick="gres()">Reset</button>
+                        <button class="btns" id="growall" onclick="growAll()">Grow All</button>
+                    </div>
+                </div>
+                <div class="flexgrowbuttons">
+                    <div class="growcontrolbutts">
+                        <p id="boxone">Box 1</p>
+                        <input type="number" id="growbox1" value="0" min="0" oninput="box1grow()">
+                    </div>
+                    <div class="growcontrolbutts">
+                        <p id="boxtwo">Box 2</p>
+                        <input type="number" id="growbox2" value="0" min="0" oninput="box2grow()">
+                    </div>
+                    <div class="growcontrolbutss">
+                        <p id="boxthree">Box 3</p>
+                        <input type="number" id="growbox3" value="0" min="0" oninput="box3grow()">
+                    </div>
+                </div>
+
+            </div>
+            <!-- RIGHT SIDE -->
+
+        </div>
+    </div>
+    <script src="Panganiban_TSA8.js"></script>
+</body>
+
+</html>
