@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Pixelify Sans;
+
+}
+
+body {
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/049/037/300/large/takashi-suzuki-monsters-inc-lighting-test-3.jpg?1651546155);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.header {
+    justify-content: center;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    border: 5px solid #281248;
+    border-radius: 10px;
+    background-color: rgb(40, 31, 90);
+    filter: drop-shadow(9px 10px 4px black);
+}
+
+.section {
+    width: 399px;
+    border: 5px solid #a2fdff;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    color: rgb(73, 197, 206);
+    text-align: center;
+    background-color: #273761;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.btns {
+    width: 50%;
+    background-color: rgb(41, 31, 63);
+    color: white;
+}
+
+.secbuttons {
+    gap: 7px;
+    justify-content: space-around;
+    background-color: #273761;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.tcontrols {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.botrcontrols {
+    margin-top: 110px;
+}
+
+.btns:hover {
+    background-color: #2FB3B5;
+}
+
+/* RESET BUTTON */
+#resFlexbox {
+    margin-top: 90px;
+    background-color: #3b2551;
+    border: solid #2c1d3a;
+    color: white;
+}
+
+#resFlexbox:hover {
+    background-color: rgb(119, 23, 23);
+}
+
+/* GAP */
+.gapsecbutts {
+    display: flex;
+    flex-direction: row;
+    color: #2FB3B5;
+    font-size: 18px;
+    gap: 29px;
+}
+
+#gap-counter {
+    text-align: center;
+    border-radius: 8px;
+}
+
+#gapbor {
+    border: 5px solid #a2fdff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+/* JUSTIFY CONTENT */
+.jsecbutts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 7px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* FLEX DIRECTION */
+#fdrow:hover {
+    background-color: #EA6A76;
+}
+
+#fdcolumn:hover {
+    background-color: #EA6A76;
+}
+
+/* FLEX GROW */
+.flexgrowbuttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+}
+
+#boxone {
+    color: #87BA2F;
+}
+
+#boxtwo {
+    color: #a2fdff;
+}
+
+#boxthree {
+    color: #EA6A76;
+}
+
+#growbox1 {
+    text-align: center;
+    border-radius: 8px;
+}
+
+#growbox2 {
+    text-align: center;
+    border-radius: 8px;
+}
+
+#growbox3 {
+    text-align: center;
+    border-radius: 8px;
+}
+
+#resflexgrow:hover {
+    background-color: rgb(119, 23, 23);
+}
+
+#growall:hover {
+    background-color: #87BA2F;
+}
+
+.flexbox-container {
+    background-image: url(https://64.media.tumblr.com/tumblr_lq39h2oEML1qzlu28o1_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    border: 8px solid #150328;
+    border-radius: 5px;
+    padding: 10px;
+    width: 550px;
+    height: 780px;
+    margin-top: 20px;
+    filter: drop-shadow(9px 10px 4px)
+}
+
+/* 3 BOXES */
+.pixs {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+#box1 {
+    background-color: #87BA2F;
+}
+
+#box2 {
+    background-color: #2FB3B5;
+}
+
+#box3 {
+    background-color: #EA6A76;
+}
