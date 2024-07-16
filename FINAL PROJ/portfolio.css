@@ -1,4 +1,4 @@
-.portfolio{
+.portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
 }
 
 
-.container{
+.wcontainer {
     position: relative;
     top: 40%;
     left: 38%;
@@ -23,7 +23,7 @@
     box-shadow: 0 30px 50px #dbdbdb;
 }
 
-.titleworks{
+.titleworks {
     display: flex;
     color: rgb(255, 255, 255);
     font-size: 3rem;
@@ -37,7 +37,7 @@
         "WONK" 0;
 }
 
-.wcontainer .wslide .item{
+.wcontainer .work-slide .work-item {
     width: 200px;
     height: 300px;
     position: absolute;
@@ -51,8 +51,8 @@
     transition: 0.5s;
 }
 
-.wslide .item:nth-child(1),
-.wslide .item:nth-child(2){
+.work-slide .work-item:nth-child(1),
+.work-slide .work-item:nth-child(2) {
     top: 0;
     left: 0;
     transform: translate(0, 0);
@@ -62,25 +62,27 @@
 }
 
 
-.wslide .item:nth-child(3){
+.work-slide .work-item:nth-child(3) {
     left: 50%;
 }
-.wslide .item:nth-child(4){
+
+.work-slide .work-item:nth-child(4) {
     left: calc(50% + 220px);
 }
-.wslide .item:nth-child(5){
+
+.work-slide .work-item:nth-child(5) {
     left: calc(50% + 440px);
 }
 
 /* here n = 0, 1, 2, 3,... */
-.wslide .item:nth-child(n + 6){
+.work-slide .work-item:nth-child(n + 6) {
     left: calc(50% + 660px);
     opacity: 0;
 }
 
 
 
-.item .content{
+.work-item .wcontent {
     position: absolute;
     top: 50%;
     left: 100px;
@@ -96,12 +98,12 @@
 }
 
 
-.wslide .item:nth-child(2) .content{
+.work-slide .work-item:nth-child(2) .wcontent {
     display: block;
 }
 
 
-.content .name{
+.wcontent .wname {
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -109,14 +111,15 @@
     animation: animate 1s ease-in-out 1 forwards;
 }
 
-.content .des{
+.wcontent .wdes {
     margin-top: 10px;
+    font-weight: 600;
     margin-bottom: 20px;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
-.conbts{
+.wconbts {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -125,18 +128,18 @@
     cursor: pointer;
 }
 
-.conbts:hover{
+.wconbts:hover {
     background-color: #c59d00;
 }
 
 @keyframes animate {
-    from{
+    from {
         opacity: 0;
         transform: translate(0, 100px);
         filter: blur(33px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translate(0);
         filter: blur(0);
@@ -144,7 +147,7 @@
 }
 
 
-#sbts{
+#worbts {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -154,28 +157,28 @@
     bottom: 20px;
 }
 
-#sbts{
+#worbts {
     border-radius: 8px;
     border: none;
     cursor: pointer;
     /* margin: 0 5px; */
     transition: 0.3s;
-    
+
 }
 
-#sbts button:hover{
+#worbts button:hover {
     background: #393939c1;
     color: #fff;
 }
 
-@media(max-width: 1185px){
-    .container{
-       /* margin-left: 20px; */
-        /* transform: translate(-50%, -50%); */
+@media(max-width: 1185px) {
+    .wcontainer {
+
         width: 70%;
         height: 80%;
     }
-    .container .slide .item{
+
+    .wcontainer .work-slide .work-item {
         width: 500px;
         height: 400px;
         position: absolute;
@@ -188,42 +191,43 @@
         display: inline-block;
         transition: 0.5s;
     }
-    .slide .item:nth-child(1),
-.slide .item:nth-child(2){
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
-}
+
+    .work-slide .work-item:nth-child(1),
+    .work-slide .work-item:nth-child(2) {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
 
 
-.slide .item:nth-child(3){
-    left: 70%;
-}
-.slide .item:nth-child(4){
-    left: calc(70% + 220px);
-}
-.slide .item:nth-child(5){
-    left: calc(70% + 440px);
+    .work-slide .work-item:nth-child(3) {
+        left: 70%;
+    }
+
+    .work-slide .work-item:nth-child(4) {
+        left: calc(70% + 220px);
+    }
+
+    .work-slide .work-item:nth-child(5) {
+        left: calc(70% + 440px);
+    }
+
+    .work-slide .work-item:nth-child(n + 6) {
+        left: calc(70% + 660px);
+        opacity: 0;
+    }
 }
 
-/* here n = 0, 1, 2, 3,... */
-.slide .item:nth-child(n + 6){
-    left: calc(70% + 660px);
-    opacity: 0;
-}
-}
-
-@media(max-width: 780px){
-    .container{
-       /* margin-left: 20px; */
-        /* transform: translate(-50%, -50%); */
+@media(max-width: 780px) {
+    .wcontainer {
         width: 70%;
         height: 80%;
     }
-    .container .slide .item{
+
+    .wcontainer .work-slide .work-item {
         width: 500px;
         height: 400px;
         position: absolute;
@@ -236,31 +240,70 @@
         display: inline-block;
         transition: 0.5s;
     }
-    .slide .item:nth-child(1),
-.slide .item:nth-child(2){
-    top: 0;
-    left: 0;
-    transform: translate(0, 0);
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
+
+    .work-slide .work-item:nth-child(1),
+    .work-slide .work-item:nth-child(2) {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .work-slide .work-item:nth-child(3) {
+        display: none;
+    }
+
+    .work-slide .work-item:nth-child(4) {
+        display: none;
+    }
+
+    .work-slide .work-item:nth-child(5) {
+        display: none;
+    }
+
+    /* here n = 0, 1, 2, 3,... */
+    .work-slide .work-item:nth-child(n + 6) {
+        left: calc(70% + 660px);
+        opacity: 0;
+    }
 }
 
 
-.slide .item:nth-child(3){
-    display: none;
-}
-.slide .item:nth-child(4){
-    display: none;
-}
-.slide .item:nth-child(5){
-    display: none;
-}
+@media (max-width: 610px) {
+    .wcontent {
+        justify-self: center;
+    }
 
-/* here n = 0, 1, 2, 3,... */
-.slide .item:nth-child(n + 6){
-    left: calc(70% + 660px);
-    opacity: 0;
-}
-}
+    .work-item .wcontent {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 300px;
+        text-align: left;
+        color: #eee;
+        transform: translate(0, -50%);
+        font-family: system-ui;
+        display: none;
+        padding: 10px;
+        background-color: #50505073;
+        border-radius: 10px;
+    }
 
+    .work-item .wcontent {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 300px;
+        text-align: left;
+        color: #eee;
+        transform: translate(0, -50%);
+        font-family: system-ui;
+        display: none;
+        padding: 10px;
+        background-color: #50505073;
+        border-radius: 10px;
+    }
+}
