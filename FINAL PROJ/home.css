@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAE071;
+    height: auto;
+    background-image: url(paper-page-background-texture.jpg);
+}
+
+/* NAV SECTION */
+nav {
+    background: #405b6ff0;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.navi {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    height: 100px;
+    filter: drop-shadow(0px 4px 4px)
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    gap: 35px;
+    height: 150px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+}
+nav a:hover {
+    color: rgb(239, 203, 0);
+}
+
+.logo img {
+    width: 90px;
+    margin-right: 10px;
+}
+
+
+nav .logop {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.logo a:hover {
+    color: white;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* HOME SECTION */
+.home{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    width: 100%;
+    height: 880px;
+}
+
+.hcontent img{
+    height: 100%;
+    width: 50%;
+}
+
+.hcontent{
+    /* border: solid; */
+    display: flex;
+    flex-direction: row;  
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.htcontents {
+    padding: 20px;
+    margin: 10px;
+}
+
+.htext{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 88%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px)
+}
+
+.migm {
+    width: 40%;
+    display: flex;
+    margin: auto;
+    
+}
+
+.home-image img{
+    width: 30vw;
+    animation: floatImage 4s ease-in-out infinite;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    transition: 2s ease-in-out;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.lof {
+    color: #4a4c4e;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+.midt {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.5rem;
+    color: rgb(239, 196, 23);
+    /* text-shadow: 3px 1.5px #4b4b4b; */
+}
+
+
+p {
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #325A79;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    margin: 0px auto;
+}
+
+#homebtn{
+    background-color: #325A79;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+#homebtn:hover {
+    background-color: #D9AC4E;
+}
+
+@media (max-width: 1065px){
+    .home{
+        height: auto;
+    }
+    .hcontent{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
