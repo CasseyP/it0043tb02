@@ -1,0 +1,178 @@
+.about{
+    justify-content: center;
+    width: 95%;
+    height: 880px;
+    padding: 50px;;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/532/483/original/paper-line-vector-background-detailed-lined-paper-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px)
+}
+
+.abcontent{
+    display: flex;
+    flex-direction: row;  
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.atext{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.attext {
+    color: rgb(239, 196, 23);
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+
+.abtp{
+    width: 35%;
+    display: flex;
+    margin: auto;
+}
+
+
+.amedtxt{
+    font-size: 2.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+.educbox {
+    justify-content: space-evenly;
+}
+
+.educ {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.sframe {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 107px;
+    filter: drop-shadow(0px 4px 4px)
+}
+
+.sframe:hover{
+    transform: translateY(-22px);
+    transition: 1.7s ease;
+}
+
+.edtxt {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.slevel {
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.slevelc {
+    font-weight: 700;
+    margin-top: 4.5px;
+}
+
+.sname {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.cv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+@media (max-width: 1338px) {
+    .about {
+        height: auto;
+        /* width: 95%; */
+        /* padding: 20px; */
+    }
+
+    .abcontent {
+        flex-direction: column;
+        /* align-items: center; */
+        
+    }
+
+    .abtp {
+        width: 30%;
+        /* margin-bottom: 20px; */
+    }
+
+    /* .atext {
+        width: 100%;
+    } */
+
+    .attext {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .amedtxt {
+        font-size: 1.8rem;
+    }
+
+    .educ {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .sframe {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .edtxt {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .slevel,
+    .slevelc {
+        font-size: 1rem;
+    }
+
+    .sname {
+        font-size: 0.6rem;
+    }
+
+    .cv {
+        justify-content: center;
+    }
+}
